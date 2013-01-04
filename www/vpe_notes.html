@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.5  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Chen, Patty H">
+	<META NAME="CREATED" CONTENT="20121010;23020000">
+	<META NAME="CHANGEDBY" CONTENT="dalep ">
+	<META NAME="CHANGED" CONTENT="20121011;13325600">
+	<META NAME="AppVersion" CONTENT="14.0000">
+	<META NAME="Company" CONTENT="Microsoft">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 1in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H1 { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "Droid Sans"; font-size: 16pt }
+		H1.ctl { font-family: "Lohit Hindi"; font-size: 16pt }
+		H3 { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H3.western { font-family: "Arial", sans-serif }
+		H3.cjk { font-family: "Droid Sans" }
+		H3.ctl { font-family: "Lohit Hindi" }
+		TD P { margin-bottom: 0.14in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+
+<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+
+<H1 CLASS="western"><FONT FACE="Century Schoolbook L, serif">A Web Application for Verification of Pathogen Eradication (AVPE) in Animal Colonies</FONT></H1>
+
+<H3 CLASS="western"><FONT FACE="Century Schoolbook L, serif">Overview</FONT></H3>
+
+<P STYLE="margin-bottom: 0.14in"><FONT FACE="Century Schoolbook L, serif">This web application was designed as an aid for determining when an infected animal colony can return to normal operations. After the presence of an infectious agent has been identified in a colony, extensive efforts are made to eradicate the  pathogen.  Although the gold standard approach involves depopulation and re-population, this not commonly practiced. Typically a form of test and cull strategy is implemented.  Testing is commonly performed through several waves of sampling.  This AVPE is designed to assist colony managers in deciding how many consecutive negative tests are sufficient to lift the isolation status. Although an infectious agent event may follow a much more complex model, the model that we propose is likely to be conservative in that it provides confidence intervals for infection that are broader than those associated with more complex (and
+realistic) models.<SUP>1</SUP> This AVPE is based on the following model assumptions.</FONT></P>
+
+<H3 CLASS="western"><FONT FACE="Century Schoolbook L, serif">Assumptions and Definitions</FONT></H3>
+
+<P STYLE="margin-bottom: 0.14in"><FONT FACE="Century Schoolbook L, serif">After the infection is thought to be eradicated,<I> k </I>waves of tests are performed with<I> n </I>tests performed in each wave. Each of these<I> n
+</I><SPAN STYLE="font-style: normal">x</SPAN><I> k </I>test results is negative for capturing the presence of the infectious agent. The tests are typically performed either on individual animals or animal cages (hereafter referred to as cages). We assume that the probability of a cage testing positive is constant in each testing wave and that the test results are independent across cages.  The likelihood of a cage testing positive may grow exponentially between testing waves. The time between consecutive test waves is constant.</FONT></P>
+
+<H3 CLASS="western"><FONT FACE="Century Schoolbook L, serif">Notation</FONT></H3>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=17*>
+	<COL WIDTH=239*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=7% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif"><I>k</I></FONT></P>
+		</TD>
+		<TD WIDTH=93% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif">is the number of test
+			waves.</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=7% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif"><I>n</I></FONT></P>
+		</TD>
+		<TD WIDTH=93% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif">is the number of cages
+			tested in each wave.</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=7% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif"><SPAN STYLE="font-style: normal">&pi;</SPAN><I><SUB>i</SUB></I></FONT></P>
+		</TD>
+		<TD WIDTH=93% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif">is the probability that an individual cage will test positive on the <FONT COLOR="#000000"><I>i</I></FONT><I>
+			</I><SUP>th</SUP> test wave. (For example, &pi;<SUB>1</SUB> is the probability of a cage testing positive on the first wave.)</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=7% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif"><I>t</I></FONT></P>
+		</TD>
+		<TD WIDTH=93% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif">is the time between consecutive test waves.</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=7% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif"><I>r</I></FONT></P>
+		</TD>
+		<TD WIDTH=93% STYLE="border: none; padding: 0in">
+			<P><FONT FACE="Century Schoolbook L, serif">is the growth rate of the pathogen over time, defined by the equation
+			&pi;<SUB>i+1</SUB> = &pi;<SUB>i</SUB>(1+<I>r</I>)<SUP><I>t</I></SUP> For example, if <I>t</I> = 1 (say one week between waves) and <I>r</I> = 0.2, then the probability that a cage will test positive will increase by 20% between consecutive test waves. Note that if <I>r</I> = 0, then the probability that a cage will test positive will be the same on all waves.</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<H3 CLASS="western"><FONT FACE="Century Schoolbook L, serif">Input</FONT></H3>
+<P STYLE="margin-bottom: 0.14in"><FONT FACE="Century Schoolbook L, serif"><I>k</I>,
+<I>n</I>, <I>r</I>, and <I>t</I>.</FONT></P>
+<H3 CLASS="western"><FONT FACE="Century Schoolbook L, serif">Output</FONT></H3>
+<P STYLE="margin-bottom: 0.14in"><FONT FACE="Century Schoolbook L, serif">95% and 99% confidence intervals for &pi;<SUB>1</SUB>, the probability that a cage will test positive on the first test wave.  </FONT>
+</P>
+<H3 CLASS="western"><FONT FACE="Century Schoolbook L, serif">Reference</FONT></H3>
+<OL>
+	<LI><P STYLE="margin-bottom: 0.14in"><FONT FACE="Century Schoolbook L, serif">A manuscript on this web application will be written and submitted for peer review.</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0.14in"><BR><BR>
+</P>
+</BODY>
+</HTML>
